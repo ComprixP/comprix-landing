@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>COMPRIX Procurement — Transformamos compras em economia</title>
+  <meta name="description" content="BPO de Compras — Gestão ponta a ponta, cotações, homologação de fornecedores, dashboards e economia real." />
+  <link rel="icon" href="/mnt/data/A_logo_design_for_Comprix_Procurement_is_displayed.png">
+  <style>
+    :root{
+      --blue-primary:#156BFF; /* principal */
+      --blue-deep:#0B2F63;   /* secundário */
+      --dark:#0F1B2B;
+      --muted:#E2E6EE;
+      --white:#ffffff;
+      --radius:12px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--blue-deep) 0%, #071020 100%);color:var(--muted);min-height:100vh}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:16px}
+    .brand img{height:64px}
+    .brand h1{margin:0;color:var(--white);font-size:20px;letter-spacing:1px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+    .hero{display:flex;gap:32px;align-items:center;padding:36px 0}
+    .hero-left{flex:1}
+    .eyebrow{display:inline-block;background:rgba(255,255,255,0.04);padding:6px 10px;border-radius:8px;color:var(--muted);font-weight:600}
+    .hero h2{color:var(--white);font-size:36px;margin:18px 0 12px}
+    .hero p{color:var(--muted);line-height:1.5;margin:0 0 20px}
+    .cta{display:flex;gap:12px}
+    .btn{background:var(--blue-primary);color:var(--white);border:none;padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:var(--muted)}
+
+    .hero-right{width:420px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:18px}
+    .kpi{display:flex;gap:12px;flex-wrap:wrap}
+    .kpi .card{flex:1 1 45%;background:rgba(0,0,0,0.15);padding:12px;border-radius:10px;text-align:center}
+    .kpi .value{font-size:20px;color:var(--white);font-weight:700}
+    .section{margin:36px 0;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));padding:20px;border-radius:14px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:rgba(255,255,255,0.02);padding:18px;border-radius:12px}
+    h3{color:var(--white);margin-top:0}
+
+    footer{padding:28px 0;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media(max-width:900px){
+      .hero{flex-direction:column}
+      .hero-right{width:100%}
+      .grid{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      nav{margin-top:12px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="/mnt/data/A_logo_design_for_Comprix_Procurement_is_displayed.png" alt="COMPRIX logo">
+        <div>
+          <h1>COMPRIX Procurement</h1>
+          <div style="color:var(--muted);font-size:12px">Transformamos compras em economia</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicos">Serviços</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#precos">Planos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-left">
+        <div class="eyebrow">BPO | Compras</div>
+        <h2>Terceirize suas compras com eficiência, tecnologia e redução de custos.</h2>
+        <p>Somos a COMPRIX — BPO de Compras que entrega processos padronizados, negociações estratégicas e dashboards que provam economia.</p>
+        <div class="cta">
+          <a class="btn" href="/mnt/data/Apresentacao_Comercial_COMPRIX.pptx" download>Baixar apresentação</a>
+          <a class="btn ghost" href="#contato">Agendar diagnóstico</a>
+        </div>
+      </div>
+      <aside class="hero-right">
+        <div class="kpi">
+          <div class="card"><div style="font-size:12px;color:var(--muted)">Gasto Total</div><div class="value">R$ 0,00</div></div>
+          <div class="card"><div style="font-size:12px;color:var(--muted)">Economia</div><div class="value">R$ 0,00</div></div>
+          <div class="card"><div style="font-size:12px;color:var(--muted)">Pedidos Abertos</div><div class="value">0</div></div>
+          <div class="card"><div style="font-size:12px;color:var(--muted)">% Entregas no Prazo</div><div class="value">0%</div></div>
+        </div>
+        <div style="margin-top:14px;font-size:12px;color:var(--muted)">Use nossa planilha e gere dashboards integrados — conforto para a gestão.</div>
+      </aside>
+    </section>
+
+    <section id="servicos" class="section">
+      <h3>Serviços</h3>
+      <div class="grid">
+        <div class="card">
+          <strong>Gestão completa de compras</strong>
+          <p>Processos padronizados: requisição, cotação, pedido e recebimento.</p>
+        </div>
+        <div class="card">
+          <strong>Cotação & Negociação</strong>
+          <p>Negociação estruturada com fornecedores para reduzir custos.</p>
+        </div>
+        <div class="card">
+          <strong>Homologação de Fornecedores</strong>
+          <p>Avaliação e seleção com KPIs de performance e qualidade.</p>
+        </div>
+        <div class="card">
+          <strong>KPI's e Dashboards</strong>
+          <p>Relatórios mensais e dashboards prontos para o Power BI.</p>
+        </div>
+        <div class="card">
+          <strong>Auditoria de Processos</strong>
+          <p>Mapeamento de gaps e proposta de melhoria contínua.</p>
+        </div>
+        <div class="card">
+          <strong>Implantação</strong>
+          <p>Setup rápido de fluxos de trabalho e treinamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="section">
+      <h3>Diferenciais COMPRIX</h3>
+      <ul>
+        <li>Foco 100% em compras — equipes especializadas</li>
+        <li>Dashboards prontos em Power BI</li>
+        <li>Redução comprovada de custos</li>
+        <li>Integração com Protheus, Totvs, Omie e ERPs comuns</li>
+      </ul>
+    </section>
+
+    <section id="precos" class="section">
+      <h3>Planos & Preços (faixas)</h3>
+      <div class="grid">
+        <div class="card"><strong>Essencial</strong><p>R$ 990 – 1.900/mês • Até 20 compras/mês</p></div>
+        <div class="card"><strong>Crescimento</strong><p>R$ 1.900 – 3.900/mês • Até 60 compras/mês</p></div>
+        <div class="card"><strong>Premium</strong><p>R$ 4.900 – 9.900/mês • Sem limite</p></div>
+      </div>
+    </section>
+
+    <section id="contato" class="section">
+      <h3>Contato</h3>
+      <div style="display:flex;gap:24px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px" class="card">
+          <p><strong>Felipe Schultz</strong></p>
+          <p>Telefone: <a href="tel:+5551996907412" style="color:var(--muted)">(51) 99690-7412</a></p>
+          <p>Email: <a href="mailto:felipers@compreaqui.com.br" style="color:var(--muted)">felipers@compreaqui.com.br</a></p>
+          <p>Local: Novo Hamburgo - RS</p>
+        </div>
+        <div style="flex:1;min-width:260px" class="card">
+          <form action="#" onsubmit="alert('Obrigado! Sua mensagem foi recebida — (simulação)');return false;">
+            <label style="display:block;margin-bottom:8px;color:var(--muted)">Nome</label>
+            <input style="width:100%;padding:10px;border-radius:8px;border:none;background:#081224;color:var(--muted)" required>
+            <label style="display:block;margin:12px 0 8px;color:var(--muted)">Email</label>
+            <input type="email" style="width:100%;padding:10px;border-radius:8px;border:none;background:#081224;color:var(--muted)" required>
+            <label style="display:block;margin:12px 0 8px;color:var(--muted)">Mensagem</label>
+            <textarea style="width:100%;padding:10px;border-radius:8px;border:none;background:#081224;color:var(--muted);min-height:100px" required></textarea>
+            <div style="margin-top:12px"><button class="btn" type="submit">Enviar mensagem</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© COMPRIX Procurement — Todos os direitos reservados</div>
+      <div>Baixe: <a href="/mnt/data/COMPRIX_Pacote_Completo.zip" style="color:var(--muted)">Kit COMPRIX</a></div>
+    </footer>
+  </div>
+</body>
+</html>
